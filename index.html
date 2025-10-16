@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Wizards Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="/profile.png" />
+</head>
+
+  <body>
+    <main>
+      <article data-testid="test-profile-card" class="profile-card">
+        <header>
+          <h2 data-testid="test-user-name">Joshua Adediran</h2>
+        </header>
+
+        <figure class="avatar-section">
+          <img
+            data-testid="test-user-avatar"
+            src="/profile.png"
+            alt="Profile photo of Joshua Adediran"
+          />
+        </figure>
+
+        <p data-testid="test-user-bio" class="bio" >
+          Frontend Developer passionate about creating accessible and responsive
+          user interfaces using modern web technologies. Solving
+          real-world problems through clean and interactive design.
+        </p>
+
+        <p data-testid="test-user-time" id="time"></p>
+
+        <nav>
+          <ul data-testid="test-user-social-links" class="social-links">
+            <li>
+              <a
+                data-testid="test-user-social-twitter"
+                href="https://x.com/JoshWebdevv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="test-user-social-github"
+                href="https://github.com/Challmejosh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                data-testid="test-user-social-linkedin"
+                href="https://www.linkedin.com/in/joshua-adediran-a65834243/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding</li>
+            <li>Playing football</li>
+            <li>Reading tech blogs</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Messy code</li>
+            <li>Slow websites</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
